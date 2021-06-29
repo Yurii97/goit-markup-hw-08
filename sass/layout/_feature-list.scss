@@ -1,0 +1,29 @@
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+  .item {
+    width: 270px;
+  }
+  .icons-svg {
+    display: flex;
+    justify-content: center;
+    background-color: $button-color;
+    padding: 25px 0;
+    margin-bottom: 30px;
+  }
+  .title {
+    color: $text-color-title;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  .description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+}

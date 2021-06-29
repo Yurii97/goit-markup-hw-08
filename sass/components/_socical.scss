@@ -1,0 +1,28 @@
+.social-icons {
+  display: flex;
+  //   justify-content: center;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: $prymary-transition;
+  }
+  &__link--grey {
+    fill: $text-color-button;
+    background-color: $background-color-footer-social;
+  }
+  &__link--white {
+    fill: $background-soc;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-color;
+    fill: $text-color-button;
+  }
+}

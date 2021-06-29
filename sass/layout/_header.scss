@@ -1,0 +1,75 @@
+.page-header {
+  border-bottom: 1px solid $header-border;
+}
+.nav-logo {
+  margin-right: 93px;
+}
+.main-nav,
+nav,
+.site-nav,
+.contact-nav {
+  display: flex;
+  align-items: center;
+}
+.contact-nav {
+  margin-left: auto;
+  .item + .item {
+    margin-left: 30px;
+  }
+}
+.site-nav {
+  &__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    padding: 32px 0px;
+    color: $text-color-title;
+    transition: $prymary-transition;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+.site-nav {
+  .current {
+    color: $accent-color;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background: $accent-color;
+    }
+  }
+  .item + .item {
+    margin-left: 50px;
+  }
+}
+.contact-nav {
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color-primary;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    padding: 32px 0px;
+    transition: $prymary-transition;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $background-soc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    fill: $background-soc;
+    transition: $prymary-transition;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+}

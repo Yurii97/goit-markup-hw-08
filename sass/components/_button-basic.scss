@@ -1,0 +1,25 @@
+.basic-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: $accent-color;
+  color: $text-color-button;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  border-width: 0px;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: $prymary-transition;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $button-color-hover;
+  }
+}
