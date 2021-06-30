@@ -1,8 +1,11 @@
 .feature-list {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   .item {
-    width: 270px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    // width: 270px;
   }
   .icons-svg {
     display: flex;

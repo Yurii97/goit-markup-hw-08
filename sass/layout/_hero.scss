@@ -1,6 +1,6 @@
 .hero {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
   background-color: $background-another;
   background-image: linear-gradient(to top, $background-hero, $background-hero),
@@ -9,15 +9,24 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 200px 0px;
+  padding: 118px 0px;
+  @media screen and(min-width:$width-laptop) {
+    padding: 200px 0px;
+    height: 600px;
+  }
   .hero-title {
     color: $text-color-button;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.363;
+    font-size: 26px;
+    line-height: 1.615;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+    padding: 0 15px;
+    @media screen and (min-width: $width-laptop) {
+      font-size: 44px;
+      line-height: 1.363;
+    }
   }
   &__button {
     margin: 0 auto;

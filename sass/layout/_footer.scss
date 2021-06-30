@@ -2,11 +2,10 @@
   background-color: $background-another;
   padding: 60px 0px;
   .footer-info {
-    margin-right: 70px;
-    padding-right: 15px;
+    text-align: center;
   }
   .container {
-    display: flex;
+    // display: flex;
   }
 }
 .footer-adress {
@@ -25,20 +24,28 @@
     line-height: 1.714;
     letter-spacing: 0.03em;
     display: inline-block;
-    margin-top: 9px;
+    margin-top: 8px;
     transition: $prymary-transition;
     &:focus,
     &:hover {
       color: $accent-color;
     }
+    @media screen and(min-width:$width-laptop) {
+      margin-top: 9px;
+    }
   }
 }
 .footer-social {
-  margin-right: 93px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin-right: 93px;
 }
 .footer-social__text,
 .footer-subscription__label {
-  padding-top: 12px;
+  // padding-top: 12px;
+  // text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
@@ -49,20 +56,22 @@
 }
 
 .footer-subscription {
-  display: flex;
-  flex-direction: column;
+  margin-top: 60px;
+  text-align: center;
   &__field {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: transparent;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     padding: 15px 16px;
-    margin-right: 12px;
+    margin: 20px 0px;
     &::placeholder {
       padding: 15px 16px;
       font-family: Roboto;

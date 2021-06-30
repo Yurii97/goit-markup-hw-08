@@ -6,8 +6,11 @@
   justify-content: center;
 }
 .team-list {
-  display: flex;
-  justify-content: space-between;
+  @media screen and(min-width: $width-tablet) {
+    width: $width-tablet;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__item {
     background-color: $text-color-button;
