@@ -8,13 +8,24 @@
   &__item {
     margin-right: 30px;
     margin-bottom: 30px;
+    width: 210px;
+    @media screen and(min-width:$width-tablet) {
+      width: 100%;
+      flex-basis: calc((100% - 60px) / 2);
+    }
+    @media screen and(min-width:$width-tablet) {
+      flex-basis: calc((100% - 90px) / 3);
+    }
+    @media screen and(min-width:$width-laptop) {
+      flex-basis: calc((100% - 180px) / 6);
+    }
   }
+
   &__link {
     display: flex;
-    width: 210px;
-    height: 92px;
     border: 1px solid $background-soc;
     box-sizing: border-box;
+    height: 92px;
     border-radius: 4px;
     justify-content: center;
     align-items: center;
@@ -24,12 +35,6 @@
     &:focus {
       fill: $accent-color;
       border-color: $accent-color;
-    }
-    @media screen and(min-width:$width-tablet) {
-      width: 226px;
-    }
-    @media screen and(min-width:$width-laptop) {
-      width: 170px;
     }
   }
 }

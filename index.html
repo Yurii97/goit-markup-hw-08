@@ -15,16 +15,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="page">
+  <body >
     <header class="page-header">
       <div class="container main-nav">
-        <!-- header nav -->
+        <a class="logo nav-logo" href="./index.html">
+          Web<span class="logo--dark">Studio</span>
+        </a>
+        <button type="button" class="header-button" data-menu-button aria-expanded="false">
+          <svg class="header-button__icon" width='40px' height='40px'>
+            <use href="./images/icons/sprite.svg#icon-menu-lines" class="header-button__menu" ></use>
+            <use href="./images/icons/sprite.svg#icon-menu-close" class="header-button__close" ></use>
+          </svg>
+        </button>
         <nav class="nav">
-          <a class="logo nav-logo" href="./index.html">
-            Web<span class="logo--dark">Studio</span>
-          </a>
           <ul class="site-nav">
             <li class="item">
               <a href="./index.html" class="site-nav__link current">Студия</a>
@@ -36,8 +41,7 @@
               <a href="#" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-        </nav>
-        <!-- header contact-->
+        </nav>      
         <ul class="contact-nav">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="contact-nav__link">
@@ -55,7 +59,42 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
+        </ul>        
+        <div class="header-mobile-menu" data-menu>
+          <div class="container">          
+            <nav class="">
+              <ul class="site-nav">
+                <li class="item">
+                  <a href="./index.html" class="site-nav__link current">Студия</a>
+                </li>
+                <li class="item">
+                  <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+                </li>
+                <li class="item">
+                  <a href="#" class="site-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>      
+            <ul class="">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="contact-nav__link">
+                  <svg width="16px" height="12px" class="contact-nav__icon">
+                    <use href="./images/icons/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="contact-nav__link">
+                  <svg width="10px" height="16px" class="contact-nav__icon">
+                    <use href="./images/icons/sprite.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>       
       </div>
     </header>
     <!-- main -->
@@ -145,7 +184,12 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./images/team/img.jpg" alt="Игорь Демьяненко"/>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team/team-1.jpg 1x, ./images/team/team/team-1-2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team-tablet/t-tabl-1.jpg 1x, ./images/team/team-tablet/t-tabl-1-2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/team/team-mobile/t-mob-1.jpg 1x, ./images/team/team-mobile/t-mob-1-2x.jpg 2x">
+                <img src="./images/team/team-mobile/t-mob-1.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
                 <p class="team-list__position">Product Designer</p>
@@ -182,7 +226,12 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/team/img(1).jpg" alt="Ольга Репина"/>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team/team-2.jpg 1x, ./images/team/team/team-2-2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team-tablet/t-tabl-2.jpg 1x, ./images/team/team-tablet/t-tabl-2-2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/team/team-mobile/t-mob-2.jpg 1x, ./images/team/team-mobile/t-mob-2-2x.jpg 2x">
+                <img src="./images/team/team-mobile/t-mob-2.jpg" alt="Ольга Репина"/>
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Ольга Репина</h3>
                 <p class="team-list__position">Frontend Developer</p>
@@ -219,7 +268,12 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/team/img(2).jpg" alt="Николай Тарасов"/>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team/team-3.jpg 1x, ./images/team/team/team-3-2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team-tablet/t-tabl-3.jpg 1x, ./images/team/team-tablet/t-tabl-3-2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/team/team-mobile/t-mob-3.jpg 1x, ./images/team/team-mobile/t-mob-3-2x.jpg 2x">
+                <img src="./images/team/team-mobile/t-mob-3.jpg" alt="Николай Тарасов"/>
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Николай Тарасов</h3>
                 <p class="team-list__position">Marketing</p>
@@ -256,7 +310,12 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/team/img(3).jpg" alt="Михаил Ермаков"  />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team/team-4.jpg 1x, ./images/team/team/team-4-2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team-tablet/t-tabl-4.jpg 1x, ./images/team/team-tablet/t-tabl-4-2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/team/team-mobile/t-mob-4.jpg 1x, ./images/team/team-mobile/t-mob-4-2x.jpg 2x">
+                <img src="./images/team/team-mobile/t-mob-4.jpg" alt="Михаил Ермаков"  />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Михаил Ермаков</h3>
                 <p class="team-list__position">UI Designer</p>
@@ -424,43 +483,49 @@
         </button>
         <p class="modal-windons__title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="form">
-          <label class="form__field">Имя
+          <label class="form__field"
+            >Имя
             <input type="text" name="name" class="form__input" />
             <svg width="18px" height="18px" class="form__svg">
-            <use href="./images/icons/sprite.svg#icon-person-modal"></use>
-            </svg>
-          </label>                    
-          <label class="form__field">Телефон
-            <input type="tel" name="tel" class="form__input" />
-            <svg width="18px" height="18px" class="form__svg">
-            <use href="./images/icons/sprite.svg#icon-phone-modal"></use>
-            </svg>
-          </label>      
-          <label class="form__field">Почта 
-            <input type="email" name="mail" class="form__input" />
-            <svg width="18px" height="18px" class="form__svg">
-            <use href="./images/icons/sprite.svg#icon-email-modal"></use>
+              <use href="./images/icons/sprite.svg#icon-person-modal"></use>
             </svg>
           </label>
-          <label class="form__field form__field--last">Комментарий
+          <label class="form__field"
+            >Телефон
+            <input type="tel" name="tel" class="form__input" />
+            <svg width="18px" height="18px" class="form__svg">
+              <use href="./images/icons/sprite.svg#icon-phone-modal"></use>
+            </svg>
+          </label>
+          <label class="form__field"
+            >Почта
+            <input type="email" name="mail" class="form__input" />
+            <svg width="18px" height="18px" class="form__svg">
+              <use href="./images/icons/sprite.svg#icon-email-modal"></use>
+            </svg>
+          </label>
+          <label class="form__field form__field--last"
+            >Комментарий
             <textarea
               name="comment"
               placeholder="Введите текст"
               class="form__input form__input--textarea"
               autocomplete="of"
-              ></textarea>
+            ></textarea>
           </label>
           <label class="form-policy">
-            <input type="checkbox" name="policy" class="form-policy__checkbox visually-hidden"/>
+            <input type="checkbox" name="policy" class="form-policy__checkbox visually-hidden" />
             <svg width="16px" height="15px" class="form-policy__icon">
               <use href="./images/icons/sprite.svg#icon-check"></use>
-              </svg>
-            Соглашаюсь с рассылкой и принимаю <a href="#" class="form-policy__link"> Условия договора</a>
+            </svg>
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="form-policy__link"> Условия договора</a>
           </label>
-          <button type="submit" class=" form-policy__button basic-button" disabled>Отправить</button>
+          <button type="submit" class="form-policy__button basic-button" disabled>Отправить</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

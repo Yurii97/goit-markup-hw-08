@@ -3,9 +3,20 @@
   padding: 60px 0px;
   .footer-info {
     text-align: center;
+    @media screen and(min-width: $width-laptop) {
+      text-align: start;
+    }
   }
   .container {
-    // display: flex;
+    @media screen and(min-width: $width-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @media screen and(min-width: $width-laptop) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 }
 .footer-adress {
@@ -40,6 +51,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and(min-width: $width-tablet) {
+    margin-top: 5px;
+  }
+  @media screen and(min-width:$width-laptop) {
+    margin-top: 12px;
+    align-items: flex-start;
+  }
   // margin-right: 93px;
 }
 .footer-social__text,
@@ -58,10 +76,25 @@
 .footer-subscription {
   margin-top: 60px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and(min-width: $width-tablet) {
+    // width: 450px;
+  }
+  @media screen and(min-width:$width-laptop) {
+    margin-top: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: start;
+  }
   &__field {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and(min-width:$width-laptop) {
+      flex-direction: row;
+      margin-top: 20px;
+    }
   }
   &__input {
     width: 100%;
@@ -72,6 +105,15 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     padding: 15px 16px;
     margin: 20px 0px;
+    @media screen and(min-width: $width-tablet) {
+      width: 450px;
+    }
+    @media screen and(min-width:$width-laptop) {
+      width: 358px;
+      margin: 0;
+      margin-right: 12px;
+    }
+
     &::placeholder {
       padding: 15px 16px;
       font-family: Roboto;
