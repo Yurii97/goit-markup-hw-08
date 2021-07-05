@@ -43,7 +43,7 @@
           </ul>
         </nav>      
         <ul class="contact-nav">
-          <li class="item">
+          <li class="contact-nav__item">
             <a href="mailto:info@devstudio.com" class="contact-nav__link">
               <svg width="16px" height="12px" class="contact-nav__icon">
                 <use href="./images/icons/sprite.svg#icon-mail"></use>
@@ -51,7 +51,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="contact-nav__item">
             <a href="tel:+380961111111" class="contact-nav__link">
               <svg width="10px" height="16px" class="contact-nav__icon">
                 <use href="./images/icons/sprite.svg#icon-phone"></use>
@@ -61,38 +61,46 @@
           </li>
         </ul>        
         <div class="header-mobile-menu" data-menu>
-          <div class="container">          
-            <nav class="">
-              <ul class="site-nav">
-                <li class="item">
-                  <a href="./index.html" class="site-nav__link current">Студия</a>
+          <div class="container mobile-menu">          
+            <nav class="mobile-menu__nav">
+              <ul class="mobile-menu__site-nav">
+                <li class="mobile-menu__nav-item">
+                  <a href="./index.html" class="mobile-menu__link current">Студия</a>
                 </li>
-                <li class="item">
-                  <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+                <li class="mobile-menu__nav-item">
+                  <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
                 </li>
-                <li class="item">
-                  <a href="#" class="site-nav__link">Контакты</a>
+                <li class="mobile-menu__nav-item">
+                  <a href="#" class="mobile-menu__link">Контакты</a>
                 </li>
               </ul>
-            </nav>      
-            <ul class="">
-              <li class="item">
-                <a href="mailto:info@devstudio.com" class="contact-nav__link">
-                  <svg width="16px" height="12px" class="contact-nav__icon">
-                    <use href="./images/icons/sprite.svg#icon-mail"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="item">
-                <a href="tel:+380961111111" class="contact-nav__link">
-                  <svg width="10px" height="16px" class="contact-nav__icon">
-                    <use href="./images/icons/sprite.svg#icon-phone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
+            </nav>
+            <div class="mobile-contact">
+              <ul class="mobile-contact__list">
+                <li class="mobile-contact__item">
+                  <a href="tel:+380961111111" class="mobile-contact__tel">
+                    +38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contact__item">
+                  <a href="mailto:info@devstudio.com" class="mobile-contact__mail">
+                    info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="header-socical">
+                <li class="header-socical__item">
+                  <a href="#" class="header-socical__link">Instagram</a>
+                </li>
+                <li class="header-socical__item">
+                  <a href="#" class="header-socical__link">Twitter</a>
+                </li>
+                <li class="header-socical__item">
+                  <a href="#" class="header-socical__link">Facebook</a>
+                </li>
+                <li class="header-socical__item">
+                  <a href="#" class="header-socical__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>       
       </div>
@@ -187,8 +195,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="./images/team/team/team-1.jpg 1x, ./images/team/team/team-1-2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./images/team/team-tablet/t-tabl-1.jpg 1x, ./images/team/team-tablet/t-tabl-1-2x.jpg 2x">
-                <source media="(min-width: 480px)" srcset="./images/team/team-mobile/t-mob-1.jpg 1x, ./images/team/team-mobile/t-mob-1-2x.jpg 2x">
-                <img src="./images/team/team-mobile/t-mob-1.jpg" alt="Игорь Демьяненко" />
+                <img srcset="./images/team/team-mobile/t-mob-1.jpg 1x, ./images/team/team-mobile/t-mob-1-2x.jpg 2x" alt="Игорь Демьяненко" />
               </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
@@ -229,8 +236,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="./images/team/team/team-2.jpg 1x, ./images/team/team/team-2-2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./images/team/team-tablet/t-tabl-2.jpg 1x, ./images/team/team-tablet/t-tabl-2-2x.jpg 2x">
-                <source media="(min-width: 480px)" srcset="./images/team/team-mobile/t-mob-2.jpg 1x, ./images/team/team-mobile/t-mob-2-2x.jpg 2x">
-                <img src="./images/team/team-mobile/t-mob-2.jpg" alt="Ольга Репина"/>
+                <img srcset="./images/team/team-mobile/t-mob-2.jpg 1x, ./images/team/team-mobile/t-mob-2-2x.jpg 2x" alt="Ольга Репина"/>
               </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Ольга Репина</h3>
@@ -271,8 +277,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="./images/team/team/team-3.jpg 1x, ./images/team/team/team-3-2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./images/team/team-tablet/t-tabl-3.jpg 1x, ./images/team/team-tablet/t-tabl-3-2x.jpg 2x">
-                <source media="(min-width: 480px)" srcset="./images/team/team-mobile/t-mob-3.jpg 1x, ./images/team/team-mobile/t-mob-3-2x.jpg 2x">
-                <img src="./images/team/team-mobile/t-mob-3.jpg" alt="Николай Тарасов"/>
+                <img srcset="./images/team/team-mobile/t-mob-3.jpg 1x, ./images/team/team-mobile/t-mob-3-2x.jpg 2x" alt="Николай Тарасов"/>
               </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Николай Тарасов</h3>
@@ -313,8 +318,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="./images/team/team/team-4.jpg 1x, ./images/team/team/team-4-2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./images/team/team-tablet/t-tabl-4.jpg 1x, ./images/team/team-tablet/t-tabl-4-2x.jpg 2x">
-                <source media="(min-width: 480px)" srcset="./images/team/team-mobile/t-mob-4.jpg 1x, ./images/team/team-mobile/t-mob-4-2x.jpg 2x">
-                <img src="./images/team/team-mobile/t-mob-4.jpg" alt="Михаил Ермаков"  />
+                <img srcset="./images/team/team-mobile/t-mob-4.jpg 1x, ./images/team/team-mobile/t-mob-4-2x.jpg 2x" alt="Михаил Ермаков"  />
               </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Михаил Ермаков</h3>
