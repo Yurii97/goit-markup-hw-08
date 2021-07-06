@@ -13,27 +13,27 @@
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to top, $background-hero, $background-hero),
-      url('../../images/background/backround-hero/bc-mobil-2x.jpg');
+      url('..//..//images/background/backround-hero/bc-mobil-2x.jpg');
   }
   @media screen and(min-width: $width-tablet) {
     background-image: linear-gradient(to top, $background-hero, $background-hero),
-      url('../../images/background/backround-hero/bc-tablet-1x.jpg');
+      url('..//..//images/background/backround-hero/bc-tablet-1x.jpg');
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: $width-tablet),
     (min-resolution: 192dpi) and (min-width: $width-tablet),
     (min-resolution: 2dppx) and (min-width: $width-tablet) {
     background-image: linear-gradient(to top, $background-hero, $background-hero),
-      url('../../images/background/backround-hero/bc-tablet-2x.jpg');
+      url('..//..//images/background/backround-hero/bc-tablet-2x.jpg');
   }
   @media screen and(min-width: $width-laptop) {
     background-image: linear-gradient(to top, $background-hero, $background-hero),
-      url('../../images/background/backround-hero/bc-laptop-1x.jpg');
+      url('..//..//images/background/backround-hero/bc-laptop-1x.jpg');
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: $width-laptop),
     (min-resolution: 192dpi) and (min-width: $width-laptop),
     (min-resolution: 2dppx) and (min-width: $width-laptop) {
     background-image: linear-gradient(to top, $background-hero, $background-hero),
-      url('../../images/background/backround-hero/bc-laptop-2x.jpg');
+      url('..//..//images/background/backround-hero/bc-laptop-2x.jpg');
   }
   @media screen and(min-width:$width-laptop) {
     padding: 200px 0px;
