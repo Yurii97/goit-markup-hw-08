@@ -1,8 +1,15 @@
 .price-list {
   display: flex;
-  justify-content: center;
-  &__item + &__item {
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-bottom: -15px;
+  @media screen and(min-width:$width-tablet) {
+    justify-content: center;
+  }
+
+  &__item {
     margin-left: 8px;
+    margin-bottom: 15px;
   }
   &__button {
     font-family: Roboto;
@@ -15,7 +22,7 @@
     border-radius: 4px;
     border-width: 0px;
     padding: 6px 22px;
-    margin-bottom: 50px;
+    // margin-bottom: 15px;
     transition: $prymary-transition;
     &:hover,
     &:focus {
